@@ -109,7 +109,7 @@ class AllProductsSection extends Component {
         },
         method: 'GET',
       }
-      const response = await fetch(`http://localhost:3001/products/${id}`,options);
+      const response = await fetch(`https://nxt-trendz-new.vercel.app/products/${id}`,options);
       const data = await response.json();
       return data;
     }
@@ -149,7 +149,7 @@ class AllProductsSection extends Component {
     // const updatedData = arr.map((ele) => {
     //   return {...ele,...{categoryId : this.getCategory(ele.image_url)}}
     // })
-    const apiUrl = `http://localhost:3001/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`
+    const apiUrl = `https://nxt-trendz-new.vercel.app/products?sort_by=${activeOptionId}&category=${activeCategoryId}&title_search=${searchInput}&rating=${activeRatingId}`
 
     const response = await fetch(apiUrl, options)
     if (response.ok) {

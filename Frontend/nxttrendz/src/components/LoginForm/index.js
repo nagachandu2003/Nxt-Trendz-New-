@@ -37,7 +37,7 @@ class LoginForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    const url = 'http://localhost:3001/login'
+    const url = 'https://nxt-trendz-new.vercel.app/login'
     // const url = "https://apis.ccbp.in/login";
     const options = {
       method: 'POST',

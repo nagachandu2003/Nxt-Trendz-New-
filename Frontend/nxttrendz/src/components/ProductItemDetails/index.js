@@ -51,7 +51,7 @@ class ProductItemDetails extends Component {
       apiStatus: apiStatusConstants.inProgress,
     })
     const jwtToken = Cookies.get('jwt_token')
-    const apiUrl = `http://localhost:3001/products/${id}`
+    const apiUrl = `https://nxt-trendz-new.vercel.app/products/${id}`
     const options = {
       headers: {
         Authorization: `Bearer ${jwtToken}`,

@@ -54,7 +54,7 @@ class SignUpForm extends Component {
             },
             body : JSON.stringify(obj)
         }
-        const response = await fetch('http://localhost:3001/register',options);
+        const response = await fetch('https://nxt-trendz-new.vercel.app/register',options);
         const data = await response.json();
         if(data.message==="User Already Exists")
             this.onSubmitFailure(data.message);
