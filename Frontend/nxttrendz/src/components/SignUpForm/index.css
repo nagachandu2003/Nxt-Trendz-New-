@@ -1,0 +1,12 @@
+.login-link{
+    color:blue;
+    text-decoration: underline;
+    cursor:pointer;
+    margin-left:5px;
+    font-family: "Roboto";
+}
+.new-err-msg{
+    font-size:15px;
+    text-align:center;
+    width:100%;
+}
